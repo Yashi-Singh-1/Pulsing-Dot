@@ -1,0 +1,67 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set up linear gradient background for the body */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+  }
+  
+  /* Style for the container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff; /* White background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* Style for the pulsing dots */
+  .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dot {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+  }
+  
+  .dot.dot1 {
+    background-color: #3498db; /* Color for the first dot */
+    animation-delay: 0s; /* Delay for the animation */
+  }
+  
+  .dot.dot2 {
+    background-color: #e74c3c; /* Color for the second dot */
+    animation-delay: 0.2s; /* Delay for the animation */
+  }
+  
+  .dot.dot3 {
+    background-color: #9b59b6; /* Color for the third dot */
+    animation-delay: 0.4s; /* Delay for the animation */
+  }
+  
+  /* Keyframes for the pulse animation */
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
